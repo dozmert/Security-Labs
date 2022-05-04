@@ -6,11 +6,11 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 
 ## TryHackMe
 | Box/Lab | Difficulty | Date Completed |
-|---|---|---|
-| Anthem | x | 25 MAR 2022 |
-| Blueprint | x | 16 MAR 2022 |
-| Blue(Eternal) | x | 18 MAR 2022 |
-| Vulnversity | Easy | 28 APR 2022 |
+|---|:---:|:---:|
+| Anthem | Easy | 25 MAR 2022 |
+| [Blueprint](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Blueprint/readme.md) | Easy | 16 MAR 2022 |
+| Blue(Eternal) | Easy | 18 MAR 2022 |
+| [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md) | Easy | 28 APR 2022 |
 
 
 
