@@ -54,12 +54,12 @@ As the wordlist was quite long it was going to take a long time to work through 
 ```
 With the match found before the wordlist completed, I navigated to this sub directory in my browser and was met with a page with an upload form. To test out the form I uploaded a blank .txt file and received an error revealing that file extensions were being filtered.
 
-![](/TryHackMe/Vunversity//images/vulnversity_002.jpg)
+![](TryHackMe/Vunversity/images/vulnversity_002.jpg)
 
 From here I moved to `Burpsuite` to make use of the intruder tool. I have used Burpsuite in the past however I have not had many chances to employ the intruder.
 Once the proxy was set and I had set the web application within the scope of Burpsuite I reuploaded the blank .txt file to capture the traffic. This traffic was then sent to the intruder where I adjusted the appropriate settings to target the upload file's extension.
 
-![](/TryHackMe/Vunversity//images/vulnversity_004.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_004.jpg)
 
 This is where I found that I needed a new world list of file extensions. I found a publicly available list through Github which can be found here: https://gist.github.com/securifera/e7eed730cbe1ce43d0c29d7cd2d582f4
 This list was quite extensive and was going to take some time to work through, for the purposes of this box I used the recommended list that was provided in the notes.
@@ -72,7 +72,7 @@ phptml
 ```
 This list failed a few times which had be questioning my intruder's settings however I discovered that I needed to uncheck the 'encode url' option to get successful results, I will keep this in mind in future. The results has shown the .phptml was not filtered and could successfully be uploaded to the server.
 
-![](/TryHackMe/Vunversity//images/vulnversity_005.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_005.jpg)
 
 Great, this was going to be the entry point. 
 #### Weaponization 
@@ -91,8 +91,8 @@ I have to disclose I missed a step here in by knowing how to execute the file. T
 gobuster dir -u http://<Target-IP>:3333/internal -w <Wordlist> -o <output.txt>
 ```
 
-![](/TryHackMe/Vunversity//images/vulnversity_005.jpg)
-![](/TryHackMe/Vunversity//images/vulnversity_006.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_005.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_006.jpg)
 
 #### Installation 
 N/A
@@ -111,12 +111,12 @@ find / -user root -perm -4000 -exec ls -ldb {} \;
 ```
 The 'interesting' results had been pointed out as `/bin/systemctl`. 
 
-![](/TryHackMe/Vunversity//images/vulnversity_007.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_007.jpg)
 
 With my previous Linux experience, I knew what systemctl was responsible on a surface level however how this was related to escalation in privileges was beyond my knowledge and experience. At this point I resorted to googling how this could be used in escalation of privileges. I found a useful resource which had explained that a custom service could be created and registered into the target machine allowing an execution of bash commands. The resource can be found here: https://medium.com/@klockw3rk/privilege-escalation-leveraging-misconfigured-systemctl-permissions-bc62b0b28d49
 As I had no existing privileges on the machine to create a new file remotely, I knew this needed to be done my local machine and be uploaded to the server. I created a file called `rooot.service.phptml` and inserted in the lines of text which was provided by the resource.
 
-![](/TryHackMe/Vunversity//images/vulnversity_008.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_008.jpg)
 
 While writing this file I had that 'ah-hah' moment where I understood why systemctl was significant. Once the file was created and uploaded to the webserver I navigated to find in a file path I had learned through TryHackMe's web application course and knew that I simply needed to rename the file back into the `.service` format. 
 ```bash
@@ -129,7 +129,7 @@ Using the web resource, I found the following command which I knew existed throu
 systemctl enable/var/www/html/internal/uploads/rooot.service
 ```
 
-![](/TryHackMe/Vunversity//images/vulnversity_009.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_009.jpg)
 
 Once the service was registered successfully, I was ready to execute the script. I had created a new Netcat listening on the local session prior to running the service command.
 ```bash
@@ -140,7 +140,7 @@ Then proceed to start the malicious service through the shell.
 systemctl start rooot.service
 ```
 
-![](/TryHackMe/Vunversity//images/vulnversity_010.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_010.jpg)
 
 This had now initiated a new shell session with root privileges. From here I was able to find the last flag in the root.txt file.
 ```bash
