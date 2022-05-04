@@ -46,7 +46,7 @@ As the wordlist was quite long it was going to take a long time to work through 
 
 > Edit: In my second run through this box, I had appended `-o <outputfile.txt>` to my gobuster command to have the match results displayed neatly.
 
-![](/images/vulnversity_001.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_001.jpg)
 
 ```bash
 //internal            (Status: 301) [Size: 324] [--> http://10.10.108.180:3333/internal/]
