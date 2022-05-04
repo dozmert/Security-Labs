@@ -1,4 +1,5 @@
 ## TryHackMe - (Eternal)Blue Methodology
+> Completed 18th March 2022.
 
 This is the attack methodology I used for TryHackMe's Blue box.
 This box is a step back from Blueprint in terms of objective progression, however I found it to be a good lesson in fundamentals.
