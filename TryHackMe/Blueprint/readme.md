@@ -1,7 +1,5 @@
-#SMB
-#NTML
-#MetasploitFramework
 ## TryHackMe - Blueprint Methodology
+> Completed 16th March 2022
 
 This is the attack methodology I used for TryHackMe's Blueprint box.
 I have based this document on a general concept of the intrusion kill-chain:
