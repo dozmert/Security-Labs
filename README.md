@@ -5,6 +5,9 @@ I have based most of my document on a general concept of the intrusion kill-chai
 Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Command & Control > Actions on Objective
 
 ## TryHackMe
+| Box/Lab | Difficulty | Date Completed |
+|---|---|---|
+| Vulnversity | Easy | 28 APR 2022 |
 Blueprint
 (Eternal)Blue
 Anthem
