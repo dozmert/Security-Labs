@@ -54,7 +54,7 @@ As the wordlist was quite long it was going to take a long time to work through 
 ```
 With the match found before the wordlist completed, I navigated to this sub directory in my browser and was met with a page with an upload form. To test out the form I uploaded a blank .txt file and received an error revealing that file extensions were being filtered.
 
-![](TryHackMe/Vunversity/images/vulnversity_002.jpg)
+![](/TryHackMe/Vunversity/images/vulnversity_002.jpg)
 
 From here I moved to `Burpsuite` to make use of the intruder tool. I have used Burpsuite in the past however I have not had many chances to employ the intruder.
 Once the proxy was set and I had set the web application within the scope of Burpsuite I reuploaded the blank .txt file to capture the traffic. This traffic was then sent to the intruder where I adjusted the appropriate settings to target the upload file's extension.
