@@ -6,7 +6,7 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 
 ## TryHackMe
 | Box/Lab | Difficulty | Description | Date Completed |
-|---|:---:|:---:|
+|---|:---:|:---|:---:|
 | Anthem | Easy | Exploit a Windows machine in this beginner level challenge. | 25 MAR 2022 |
 | [Blueprint](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Blueprint/readme.md) | Easy | Hack into this Windows machine and escalate your privileges to Administrator. | 16 MAR 2022 |
 | Blue(Eternal) | Easy | Deploy & hack into a Windows machine, leveraging common misconfigurations issues. | 18 MAR 2022 |
