@@ -99,7 +99,13 @@ N/A
 #### Command & Control
 N/A
 #### Actions on Objective
-With shell access via netcat I was able to navigate to the user Bill's directory and find the `user.txt` flag. At this point I was instructed to run a find command to SUID files on the system. This was the first time I have really interacted with SUID or GUID files so I had spent time reading into what this was to gain a rough idea as to why I was running the command. The documentation I was reading can be found here: https://www.thegeekdiary.com/linux-unix-how-to-find-files-which-has-suid-sgid-set/.
+With shell access via netcat I was able to navigate to the user Bill's directory and find the `user.txt` flag.
+```bash
+ls /home/bill
+  user.txt
+    cat user.txt
+```
+At this point I was instructed to run a find command to SUID files on the system. This was the first time I have really interacted with SUID or GUID files so I had spent time reading into what this was to gain a rough idea as to why I was running the command. The documentation I was reading can be found here: https://www.thegeekdiary.com/linux-unix-how-to-find-files-which-has-suid-sgid-set/.
 ```bash
 find / -user root -perm -4000 -exec ls -ldb {} \;
 ```
@@ -138,7 +144,9 @@ systemctl start rooot.service
 
 This had now initiated a new shell session with root privileges. From here I was able to find the last flag in the root.txt file.
 ```bash
-cd /root/root.txt
+ls /root
+  root.txt
+    cat root.txt
 ```
 
 ---
