@@ -5,12 +5,12 @@ I have based most of my document on a general concept of the intrusion kill-chai
 Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Command & Control > Actions on Objective
 
 ## TryHackMe
-| Box/Lab | Difficulty | Date Completed |
+| Box/Lab | Difficulty | Description | Date Completed |
 |---|:---:|:---:|
-| Anthem | Easy | 25 MAR 2022 |
-| [Blueprint](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Blueprint/readme.md) | Easy | 16 MAR 2022 |
-| Blue(Eternal) | Easy | 18 MAR 2022 |
-| [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md) | Easy | 28 APR 2022 |
+| Anthem | Easy | Exploit a Windows machine in this beginner level challenge. | 25 MAR 2022 |
+| [Blueprint](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Blueprint/readme.md) | Easy | Hack into this Windows machine and escalate your privileges to Administrator. | 16 MAR 2022 |
+| Blue(Eternal) | Easy | Deploy & hack into a Windows machine, leveraging common misconfigurations issues. | 18 MAR 2022 |
+| [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md) | Easy | Learn about active recon, web app attacks and privilege escalation. | 28 APR 2022 |
 
 
 
