@@ -28,7 +28,7 @@ A beginner level Windows machine which proved to be tricky to work through becau
 ---
 #### Reconnaissance
 First I started of with a straight forward nmap scan. This failed immediately to what was indicated as a possible block of ICMP traffic. It was recommended to add `-Pn` which will set nmap to port-discovery only
-```
+```bash
 nmap -T4 -Pn <TargetIP>
 ```
 ```
@@ -53,7 +53,7 @@ http://<TargetIP>/robots.txt
   UmbracoIsTheBest!
 ```
 For this box I decided to try and experiment with a web app scanner to help me with the last two flags. I have used Burpsuite in the past however due to only having the Community Edition I opted for an alternative. With high recommendation  I went with OWASP ZAP. This required some setup which I was happy to do as a learning experience
-```
+```bash
 sudo apt-get install zaproxy
 ```
 Once installed I installed FoxyProxy onto the web browser and set up a custom proxy address to pipe traffic into ZAP.
@@ -90,7 +90,7 @@ N/A
 
 #### Exploitation
 Now that I was done with the early objectives of the box, I as tasked with gaining access to the Anthem machine. After a bit of trial and error on RDP software I settled on using Remmina.
-```
+```bash
 sudo apt-get install Remmina
   sudo remmina
     <TargetIP>:3389
@@ -106,7 +106,8 @@ N/A
 #### Actions on Objective
  Immediately I could see an objective item ```user.txt``` in which I found a flag. 
  ```
- C:/Users/SG/Desktop/user.txt
+ C:/Users/SG/Desktop
+    user.txt
  ```
  
  The next step was to attempt to find root.txt which required me to dig through a bid of the C:/ drive. After a while I searching through as many directories as I could I found myself stumped as to where this could've been located. I must admit I turned to google for a hint and immediately face palmed as there was a process I didn't consider taking. 
@@ -124,7 +125,8 @@ N/A
 I must admit I was a little confused as to how easy it was to give myself permission to access this file, I would have considered that this was only controllable by the Administrator account though it may have just been as straight forward as user SG removing their own permission. Once the file was read-able we find a new flag in possible password form.
 Using this possible password I dived straight for the Administrator's user files and entered the new password when prompted.
 ```
-C:/Users/Administrator/Desktop/root.txt
+C:/Users/Administrator/Desktop
+    root.txt
 ```
 Success, the last flag has been found and the box has been completed.
 

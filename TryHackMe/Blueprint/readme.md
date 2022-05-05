@@ -81,11 +81,11 @@ N/A
 
 #### Actions on Objective
 I started by trying to determine the nature of the host and explore it's file directories
-```
+```bash
 whoami
   nt autheority\system
 ```
-```
+```bash
 DIR C:\users
   Administrator
     C:\users\Administrator\Desktop\root.txt.txt
@@ -98,21 +98,21 @@ The filesystem was Windows and exploring user files I happened to come across my
 My next objective was to locate and extract the NTML hash of the "Lab" user.
 
 I must admit I didn't know what NTML was or where it was found however I had a reasonable understanding through hack-sims that this was going to be a hashed password found somewhere on the system. After some googling I was able to understand that this hash was most likely going to be in the Windows "SAM" file generally located at ```C:\Windows\system32\config\SAM```. (source: https://security.stackexchange.com/questions/113295/location-of-password-hashes-on-a-windows-local-machine)
-```
+```bash
 DIR C:\Windows\system32\config\
 ```
 I could see that the file existed on the system and my goal was to now try and exfiltrate this file/data out of the target to my local machine. I had a lot of trial and error trying to get at this file. Various failures included printing its contents, copying it to the visible HTTP directory, Uploading it to a local-http/ftp server.
 Eventually I stumbled upon a page which explained how this data could be exported from its registry key. (source: https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dumping-hashes-from-sam-registry)
-```
+```bash
 reg save hklm\system system
 reg save hklm\sam sam
 ```
 With the data exported out of the system-files I could now move them around without any system-protection. I moved these files to the visible HTTP directory.
-```
-copy <missing> http://<TargetIP>:8080/oscommerce-2.3.4/docs/
+```bash
+copy <missing-data> http://<TargetIP>:8080/oscommerce-2.3.4/docs/
 ```
 From my localhost I was able to save these files. My next step was to dump the hashes out of the files. Using the website, I had found earlier I had to find a tool that was going to assist me.
-```
+```bash
 python pwdump.py /home/kali/tools/TryHackMe/Blueprint/system /home/kali/tools/TryHackMe/Blueprint/sam
   Administrator:500:<hash>:<hash>:::
   Guest:501:<hash>:<hash>:::
