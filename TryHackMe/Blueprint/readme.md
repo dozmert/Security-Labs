@@ -13,11 +13,13 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 #### Tools
 - Python
 
+---
 ### Methodology
 #### Objectives/Flags
  1. "Lab" user NTML hash decrypted
  2. root.txt
- 
+
+---
 #### Reconnaissance
 First I checked for open ports using a basic nmap scan
 ```bash

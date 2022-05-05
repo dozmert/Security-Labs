@@ -1,4 +1,5 @@
 ## TryHackMe - Anthem
+> Completed 25th March 2022.
 
 A beginner level Windows machine which proved to be tricky to work through because of my lack of knowledge around web apps. There were a few times where I had to resort to Google for hints and I will make those instances known in the write-up.
 
@@ -24,6 +25,7 @@ A beginner level Windows machine which proved to be tricky to work through becau
 6. user.txt
 7. root.txt
 
+---
 #### Reconnaissance
 First I started of with a straight forward nmap scan. This failed immediately to what was indicated as a possible block of ICMP traffic. It was recommended to add `-Pn` which will set nmap to port-discovery only
 ```
@@ -39,7 +41,7 @@ These results were a little underwhelming, so I decided to check for http servic
 ```
 http://<TargetIP>/
 ```
-Immediately I can see that there is in fact a webpage available and the nmap results were not accurate. I had decided to use Nessus in the background to scan for any additional information. Nessus results were far more accurate, showing me the RDP port and the HTTP port open. What was interesting was that the scan had revealed a screenshot from the RDP service which had shown me a Windows login screen with two users ===Administrato=== and ==SG==. 
+Immediately I can see that there is in fact a webpage available and the nmap results were not accurate. I had decided to use Nessus in the background to scan for any additional information. Nessus results were far more accurate, showing me the RDP port and the HTTP port open. What was interesting was that the scan had revealed a screenshot from the RDP service which had shown me a Windows login screen with two users `Administrato` and `SG`. 
 
 Moving onto the website I began going through some basic enumeration. Inspecting source code of the webpage had revealed some key pieces of information.
 ```
@@ -67,7 +69,7 @@ http://<TargetIP>/archive/we-arehiring
 http://<TargetIP>/archive/a-cheers-to-our-it-department/
  flag4
 ```
-The Anthem box's objectives asked to complete some additional objectives. One of which is "What CMS is the website using?"-- I didn't know how to spot this as I wasn't aware of the different types of content manager services out there. This ended up being ==Umbraco== which I had to google out of suspicion of its reoccurrence in the web-spider. The next objective asked us to find the name of the Administrator and their email address. A blog post on the website by the user Jane Doe listed an email address as ==JD@anthem.com==. Using this we could probably assume that the domain's email format is ``<First initial><Last initial>@anthem.com``.  I was legitimately stumped here for some time as I couldn't find any traces of additional names or clues that would lead me to find the Administrator other than a webpage referencing their passing away. I had to look to Google for hints which got me to search up a poem that was written on the page. 
+The Anthem box's objectives asked to complete some additional objectives. One of which is "What CMS is the website using?"-- I didn't know how to spot this as I wasn't aware of the different types of content manager services out there. This ended up being **Umbraco** which I had to google out of suspicion of its reoccurrence in the web-spider. The next objective asked us to find the name of the Administrator and their email address. A blog post on the website by the user Jane Doe listed an email address as `JD@anthem.com`. Using this we could probably assume that the domain's email format is ``<First initial><Last initial>@anthem.com``.  I was legitimately stumped here for some time as I couldn't find any traces of additional names or clues that would lead me to find the Administrator other than a webpage referencing their passing away. I had to look to Google for hints which got me to search up a poem that was written on the page. 
 ```
 Born on a Monday,  
 Christened on Tuesday,  
@@ -78,7 +80,7 @@ Died on Saturday,
 Buried on Sunday.  
 That was the end…
 ```
-This revealed the name ==Solomon Grundy==. At that point I had made the connection from the screen shot provided by Nessus displaying ==SG== and the possible email address. I actually found this to be quite annoying as it was misleading  clue due the context of the blog post and it's author. The administrator's email and password from robots.txt allowed me to login to the CMS portal at ```http://10.10.57.24/umbraco/#/login```.
+This revealed the name **Solomon Grundy**. At that point I had made the connection from the screen shot provided by Nessus displaying **SG** and the possible email address. I actually found this to be quite annoying as it was misleading  clue due the context of the blog post and it's author. The administrator's email and password from robots.txt allowed me to login to the CMS portal at ```http://10.10.57.24/umbraco/#/login```.
 
 #### Weaponization 
 N/A

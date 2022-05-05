@@ -13,14 +13,16 @@ This box is a step back from Blueprint in terms of objective progression, howeve
 - Nessus
 - Metasploit.
 
+---
 ### Methodology
 #### Objectives/Flags
 1. Flag1, This flag can be found at the system root.
 2. Flag2, This flag can be found at the location where passwords are stored within Windows.
 3. Flag3, this flag can be found in an excellent location to loot.
 
+---
 #### Reconnaissance
-First I started by running an nmap scan on the target. It was disclosed that ICMP was not going to work so I added in the extra ```-Pn``` into the options.
+First I started by running an nmap scan on the target. It was disclosed that ICMP was not going to work so I added in the extra `-Pn` into the options.
 ```bash
 nmap -T4 -Pn <TargetIP>
 ```
@@ -54,7 +56,7 @@ N/A
 N/A
 
 #### Exploitation
-The box walkthrough mentioned that it was time to use Metasploit which I've never used before. This required a bit of crash-coursing on google to understand the basic usage and commands. After booting it up I searched for the vulnerability code ```ms17-010``` and designated the local and remote hosts. I had additionally specified the port that was reported through Nessus but I don't know if this was needed.
+The box walkthrough mentioned that it was time to use Metasploit which I've never used before. This required a bit of crash-coursing on google to understand the basic usage and commands. After booting it up I searched for the vulnerability code `ms17-010` and designated the local and remote hosts. I had additionally specified the port that was reported through Nessus but I don't know if this was needed.
 ```bash
 metasploit
   search ms17-010
@@ -78,7 +80,7 @@ sessions -l (used to display current sessions)
   set session 1
   run
 ```
-A new session should spawn which I opened with ```session 2```.
+A new session should spawn which I opened with `session 2`.
 
 #### Installation 
 N/A

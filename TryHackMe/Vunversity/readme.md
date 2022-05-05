@@ -22,6 +22,7 @@ As I found web applications to be a weak point in my knowledgebase, I decided to
 1. User.txt
 2. Root.txt
 
+---
 #### Reconnaissance
 First i started off by running an nmap scan of the target machine to learn about its web service.
 ```bash
@@ -75,8 +76,10 @@ This list failed a few times which had be questioning my intruder's settings how
 ![](/TryHackMe/Vunversity/images/vulnversity_005.jpg)
 
 Great, this was going to be the entry point. 
+
 #### Weaponization 
 I modified a php reverse shell script which can be found here: https://github.com/pentestmonkey/php-reverse-shell. This script was saved as a .phptml file.
+
 #### Delivery
 The modified script was uploaded to the server. At this point I prepared a netcat session to listened for the script once it was run.
 ```bash
@@ -96,8 +99,10 @@ gobuster dir -u http://<Target-IP>:3333/internal -w <Wordlist> -o <output.txt>
 
 #### Installation 
 N/A
+
 #### Command & Control
 N/A
+
 #### Actions on Objective
 With shell access via netcat I was able to navigate to the user Bill's directory and find the `user.txt` flag.
 ```bash
@@ -153,6 +158,7 @@ ls /root
 ### After-action
 #### What I've learned
 This was a fun learning experience in privilege escalation and allowed me get some brief experience with web application enumeration and attacking. I would have liked having some prior knowledge of systemctl's significance prior to attempting this box but I felt the exposure was a great learning point for me to carry forwards.
+
 #### What I would've done differently
 If I was to attempt this box again, I would strive to spend my time properly enumerating the box instead of relying on the walkthrough to guide me, this is mainly in regard to finding the URL to correctly execute the php reverse shell script once it was uploaded to the box.
 
