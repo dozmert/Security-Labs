@@ -49,7 +49,7 @@ As the wordlist was quite long it was going to take a long time to work through 
 
 ![](/TryHackMe/Vunversity/images/vulnversity_001.jpg)
 
-```bash
+```
 //internal            (Status: 301) [Size: 324] [--> http://10.10.108.180:3333/internal/]
 ```
 With the match found before the wordlist completed, I navigated to this sub directory in my browser and was met with a page with an upload form. To test out the form I uploaded a blank .txt file and received an error revealing that file extensions were being filtered.
