@@ -3,6 +3,6 @@
   "livePreview": true,
   "newFileLocation": "current",
   "attachmentFolderPath": "./images",
-  "promptDelete": true,
+  "promptDelete": false,
   "newLinkFormat": "absolute"
 }

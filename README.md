@@ -20,7 +20,7 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 ## HackThisSite
 | Challenge | Description |
 | :---: | :--- |
-| [Basic](https://github.com/dozmert/Security-Labs/blob/main/HackThisSite/readme.md) | x |
+| [Basic](https://github.com/dozmert/Security-Labs/blob/main/HackThisSite/Basic/readme.md) | x |
 | Reaslistic | x |
 | Application | x |
 | Programming | x |
