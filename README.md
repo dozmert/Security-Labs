@@ -18,17 +18,9 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 ## HackTheBox
 
 ## HackThisSite
-| Challenge | Description |
-| :---: | :--- |
-| [Basic](https://github.com/dozmert/Security-Labs/blob/main/HackThisSite/Basic/readme.md) | x |
-| Reaslistic | x |
-| Application | x |
-| Programming | x |
-| Phonephreaking | x |
-| Javascript | x |
-| Forensic | x |
-| Extbasic | x |
-| Stego | x |
-| IRC | x |
+| Challenges |  |  |  |  |
+| :---: | :---: | :---: | :---: | :---: |
+| [Basic](https://github.com/dozmert/Security-Labs/blob/main/HackThisSite/Basic/readme.md) | Reaslistic | Application | Programming | Phonephreaking |
+| Javascript | Forensic | Extbasic | Stego | IRC |
 
 ## Exercises/Miscellaneous
