@@ -12,8 +12,10 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 | [Blue(Eternal)](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/Blue(Eternal)#readme) | Easy | Deploy & hack into a Windows machine, leveraging common misconfigurations issues. | 18 MAR 2022 |
 | [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md) | Easy | Learn about active recon, web app attacks and privilege escalation. | 28 APR 2022 |
 
-
-
+## BlueTeamLabs
+| Activities |  |
+| :---: | :---: |
+| [Challenges](https://github.com/dozmert/Security-Labs/blob/main/BlueTeamLabs/challenges/readme.md) | Investigations |
 
 ## HackTheBox
 
