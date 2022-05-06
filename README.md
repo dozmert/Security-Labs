@@ -1,10 +1,9 @@
 # Security-Labs
 This is my offensive security blog/repo that’s very much a work in progress meant for students and beginners. Write-ups are nothing new however, I’m aiming to reinforce what I have learned by trying to explain it to others. I will mainly look to grasp on to fundamentals and industry tricks rather than show off fancy techniques. As this blog/repo matures it will look diffrent from when it first started.
 
+## TryHackMe
 I have based most of my document on a general concept of the intrusion kill-chain:
 Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Command & Control > Actions on Objective
-
-## TryHackMe
 | Box/Lab | Difficulty | Description | Date Completed |
 |---|:---:|:---|:---:|
 | [Anthem](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Anthem/readme.md) | Easy | Exploit a Windows machine in this beginner level challenge. | 25 MAR 2022 |
@@ -13,9 +12,14 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 | [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md) | Easy | Learn about active recon, web app attacks and privilege escalation. | 28 APR 2022 |
 
 ## BlueTeamLabs
-| Activities |  |
-| :---: | :---: |
-| [Challenges](https://github.com/dozmert/Security-Labs/blob/main/BlueTeamLabs/challenges/readme.md) | Investigations |
+The developers of site request that writeups for Challenges and Investigations only be posted after content has been retired and is no longer worth points.
+| Challenge | Category | Difficulty | Completed |
+| :---: | :---: | :---: | :---: |
+| PowerShell Analysis - Keylogger | Reverse Engineering | Easy | x |
+
+| Investigation | Category | Difficulty | Completed |
+| :---: | :---: | :---: | :---: |
+| N/A | N/A | N/A | x |
 
 ## HackTheBox
 
