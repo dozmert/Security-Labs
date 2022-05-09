@@ -16,6 +16,7 @@ The developers of site request that writeups for Challenges and Investigations o
 | Challenge | Category | Difficulty | Completed |
 | :---: | :---: | :---: | :---: |
 | PowerShell Analysis - Keylogger | Reverse Engineering | Easy | 09 MAR 2022 |
+| ThePackage | OSINT | Easy | N/A |
 
 | Investigation | Category | Difficulty | Completed |
 | :---: | :---: | :---: | :---: |
