@@ -15,7 +15,7 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 The developers of site request that writeups for Challenges and Investigations only be posted after content has been retired and is no longer worth points.
 | Challenge | Category | Difficulty | Completed |
 | :---: | :---: | :---: | :---: |
-| PowerShell Analysis - Keylogger | Reverse Engineering | Easy | x |
+| PowerShell Analysis - Keylogger | Reverse Engineering | Easy | 09 MAR 2022 |
 
 | Investigation | Category | Difficulty | Completed |
 | :---: | :---: | :---: | :---: |
