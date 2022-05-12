@@ -1,8 +1,10 @@
 ## TryHackMe - (Eternal)Blue Methodology
-> Completed 18th March 2022.
+> Completed 18th March 2022, Revisited 12th May 2022.
 
 This is the attack methodology I used for TryHackMe's Blue box.
 This box is a step back from Blueprint in terms of objective progression, however I found it to be a good lesson in fundamentals.
+
+>Edit: On my second attempt at this box I wanted to find the vulnerability via nmap.
 
 ---
 ### Environment
@@ -49,6 +51,12 @@ Once Nessus was up and running I set the Target and set it loose. A number of vu
 port445 	MS17-010: Security Update for Microsoft Windows SMB Server (4013389) (ETERNALBLUE) (ETERNALCHAMPION) (ETERNALROMANCE) (ETERNALSYNERGY) (WannaCry) (EternalRocks) (Petya) (uncredentialed check)
 ```
 
+![](/TryHackMe/Blue(Eternal)/images/Blue_001.jpg)
+
+>Edit: Another way this could have been discovered is through the use of nmap's script engine `nmap -T4 -Pn <Target-IP> --script=default,vuln`
+
+![](/TryHackMe/Blue(Eternal)/images/Blue_002.jpg)
+
 #### Weaponization 
 N/A
 
@@ -77,10 +85,10 @@ While still under the ms17-010 exploit I searched for the upgrade.
 search shell_to_meterpreter
   use post/multi/manage/shell_to_meterpreter
 sessions -l (used to display current sessions)
-  set session 1
+  set sessions 1
   run
 ```
-A new session should spawn which I opened with `session 2`.
+A new session should spawn which I opened with `sessions 2`.
 
 #### Installation 
 N/A
@@ -91,10 +99,9 @@ N/A
 #### Actions on Objective
 From here I verified the identity.
 ```bash
-get system
+getsystem
   Already running as SYSTEM
-shell
-  whoami
+getuid
     NT AUTHORITY\SYSTEM 
 ```
 An interesting step which the box's objective walkthrough made me take was to migrate the process ID (PID). I didn't know this was possible but was interesting to try. I used ```PS``` to display the processes running on the machine and was tasked to find a process which was under ```NT AUTHORITY\SYSTEM```. This had failed a few times and even crashed the session. I was not surprised by this as it was explained the migrate command was unstable.
@@ -106,6 +113,9 @@ The process that I went with:
 ps 
   migrate 692
 ```
+
+![](/TryHackMe/Blue(Eternal)/images/Blue_003.jpg)
+
 According to the walkthrough Metasploit can immediately dump the Windows machine's hashes. This was so much more convenient than my attempts at extracting hashes in the Blueprint box. Instead of messing around with Hashcat however, I went straight to crackstation.
 ```
 hashdump
@@ -138,3 +148,5 @@ I really enjoyed this box as I got to explore some more powerful industry tools.
 
 #### What I would've done differently
 I would've liked to use screenshots to go along with these blog entries however the administration behind it would probably do my head in. I would however be looking into options of screen-recoding for my own sake of documentation and will allow me to better reflect on my steps.
+
+>Edit: I am happy with my second attempt at this box. I still have some confusion as to why we close the [0] options when searching for ms17-010 exploits.
