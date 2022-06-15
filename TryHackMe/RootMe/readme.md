@@ -52,8 +52,8 @@ N/A
 #### Delivery
 The reverse shell code I used can be found [here](https://github.com/pentestmonkey/php-reverse-shell). My initial thought was that if the site uses `.php` files as webpages, I should be successful in getting a reverse shell connection if my rshell payload was also in `.php`. While poking at the upload form, we can see that `.php` files are forbidden from being uploaded via extension filtering. Using what I had learned back in my run through [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md)I renamed the file extension to `.phphtml` as first attempt to bypass the filter. The upload was successful.
 
-![](/TryHackMe/RootMe/images/Root_003.jpg)
-![](/TryHackMe/RootMe/images/Root_004.jpg)
+![](/images/Root_003.jpg)
+![](/images/Root_004.jpg)
 
 #### Exploitation
 With a successful upload, I was able to see my reverse shell file in the site's upload file directory. I started up `Metasploit` to get a listener going.
