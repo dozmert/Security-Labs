@@ -41,6 +41,7 @@ gobuster dir --url http://<TargetIP> -w <Wordlist> > <output.txt>
 //uploads             (Status: 301) [Size: 314] [--> http://<TargetIP>/uploads/]
 //panel               (Status: 301) [Size: 312] [--> http://<TargetIP>/panel/]  
 ```
+
 ![](/TryHackMe/RootMe/images/Root_001.jpg)
 ![](/TryHackMe/RootMe/images/Root_002.jpg)
 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "TryHackMe/RootMe/readme.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "TryHackMe/RootMe/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "e0745fbd7e203d43",
   "lastOpenFiles": [
+    "TryHackMe/RootMe/readme.md",
+    "TryHackMe/Vunversity/readme.md",
+    "TryHackMe/Blue(Eternal)/readme.md",
     "README.md",
     "TryHackMe/template.md",
-    "TryHackMe/RootMe/readme.md",
     "TryHackMe/Bookstore/readme.md",
-    "TryHackMe/Blue(Eternal)/readme.md",
     "TryHackMe/Anthem/readme.md",
     "TryHackMe/Blueprint/readme.md",
     "TryHackMe/Blue(Eternal)/images/Blue_001.JPG",
-    "TryHackMe/Vunversity/readme.md",
     "HackThisSite/Basic/readme.md"
   ]
 }
