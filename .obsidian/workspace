@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "suid",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 177
+    "width": 328
   },
   "right": {
     "id": "63a9a49ffea0517c",
@@ -90,14 +90,14 @@
   "active": "e0745fbd7e203d43",
   "lastOpenFiles": [
     "TryHackMe/Bookstore/readme.md",
-    "README.md",
-    "HackThisSite/Basic/readme.md",
-    "TryHackMe/Vunversity/readme.md",
-    "TryHackMe/Blueprint/readme.md",
-    "TryHackMe/template.md",
-    "TryHackMe/Untitled.md",
+    "TryHackMe/RootMe/readme.md",
     "TryHackMe/Blue(Eternal)/readme.md",
     "TryHackMe/Anthem/readme.md",
-    "TryHackMe/Blue(Eternal)/images/Blue_01.JPG"
+    "TryHackMe/Blueprint/readme.md",
+    "TryHackMe/Blue(Eternal)/images/Blue_001.JPG",
+    "README.md",
+    "TryHackMe/Vunversity/readme.md",
+    "HackThisSite/Basic/readme.md",
+    "TryHackMe/template.md"
   ]
 }
