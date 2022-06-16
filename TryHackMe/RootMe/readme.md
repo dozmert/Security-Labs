@@ -45,7 +45,7 @@ gobuster dir --url http://<TargetIP> -w <Wordlist> > <output.txt>
 ![](/TryHackMe/RootMe/images/Root_001.jpg)
 ![](/TryHackMe/RootMe/images/Root_002.jpg)
 
-As these two directories were revealed, navigating to them showed me that the site is capable of file uploads and that the upload directory could be accessed. I got to work preparing a reverse shell using metasploit.
+As these two directories were revealed, navigating to them showed me that the site is capable of file uploads and that the upload directory could be accessed. I got to work preparing a reverse shell using `metasploit`.
 
 #### Weaponization 
 N/A
@@ -80,7 +80,7 @@ N/A
 #### Actions on Objective
 At this point I started walking the file directory of the box hoping to find some loot.
 ```bash
-cd /var/www/html/
+cd /var/www/
   cat user.txt
     THM{***}
 ```
@@ -95,7 +95,7 @@ id
   uid=33(www-data) gid=33(www-data) euid=0(root) egid=0(root) groups=0(root),33(www-data)
 ```
 ![](/TryHackMe/RootMe/images/Root_005.jpg)
-From here we could now view the shadow file which I also copy+psdyrf onyo my localhost.
+From here we could now view the shadow file which I also copy+paste onto my localhost.
 ```bash
 cat /etc/shadow
 ```
@@ -112,7 +112,7 @@ su
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 bash-4.4$
 ```
-Trying to run `su` wasn't going to work as we had manipulated our session to be `sh`. By using a command, we had previously learned, we can re manipulate the session to be a `bash` terminal.
+Trying to run `su` wasn't going to work as we had manipulated our session to be `sh`. By using a command, we had previously learned, we can re manipulate python to spawn us a new `bash` terminal sessions.
 ```bash
 su
   su
