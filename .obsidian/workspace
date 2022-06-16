@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/OhSINT/readme.md",
+            "file": "TryHackMe/SimpleCTF/readme.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "suid",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/OhSINT/readme.md",
+                "file": "TryHackMe/SimpleCTF/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "e0745fbd7e203d43",
   "lastOpenFiles": [
-    "TryHackMe/OhSINT/readme.md",
+    "TryHackMe/SimpleCTF/readme.md",
     "README.md",
-    "TryHackMe/Vunversity/readme.md",
     "TryHackMe/template.md",
+    "TryHackMe/OhSINT/readme.md",
+    "TryHackMe/Vunversity/readme.md",
     "TryHackMe/RootMe/readme.md",
     "TryHackMe/Blue(Eternal)/readme.md",
     "TryHackMe/Bookstore/readme.md",
     "TryHackMe/Anthem/readme.md",
-    "TryHackMe/Blueprint/readme.md",
-    "TryHackMe/Blue(Eternal)/images/Blue_001.JPG"
+    "TryHackMe/Blueprint/readme.md"
   ]
 }
