@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/SimpleCTF/readme.md",
+            "file": "TryHackMe/OhSINT/readme.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/SimpleCTF/readme.md",
+                "file": "TryHackMe/OhSINT/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,10 +89,10 @@
   },
   "active": "e0745fbd7e203d43",
   "lastOpenFiles": [
-    "TryHackMe/SimpleCTF/readme.md",
-    "README.md",
-    "TryHackMe/template.md",
     "TryHackMe/OhSINT/readme.md",
+    "README.md",
+    "TryHackMe/SimpleCTF/readme.md",
+    "TryHackMe/template.md",
     "TryHackMe/Vunversity/readme.md",
     "TryHackMe/RootMe/readme.md",
     "TryHackMe/Blue(Eternal)/readme.md",
