@@ -11,8 +11,10 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 | [Blue(Eternal)](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/Blue(Eternal)#readme) | Easy | Deploy & hack into a Windows machine, leveraging common misconfigurations issues. | 18 MAR 2022 |
 | [Bookstore](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/Bookstore#readme) | Medium | A Beginner level box with basic web enumeration and REST API Fuzzing. | 07 JUN 2022 |
 | [OhSINT](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/OhSINT#readme) | Easy | Are you able to use open source intelligence to solve this challenge? | 16 JUN 2022 | 
+| [Overpass](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/Overpass#readme) | Easy | What happens when some broke CompSci students make a password manager? | IN PROGRESS... | 
 | [RootMe](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/RootMe#readme) | Easy | A ctf for beginners, can you root me? | 14 JUN 2022 | 
-| [SimpleCTF](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/SimpleCTF/readme.md) | Easy | Beginner level ctf | IN PROGRESS.. | 
+| [Searchlight](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Searchlight/readme.md) | Easy | OSINT challenges in the imagery intelligence category | 30 JUN 2022 | 
+| [SimpleCTF](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/SimpleCTF/readme.md) | Easy | Beginner level ctf | 28 JUN 2022 | 
 | [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md) | Easy | Learn about active recon, web app attacks and privilege escalation. | 28 APR 2022 |
 
 ## BlueTeamLabs

