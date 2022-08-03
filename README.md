@@ -10,6 +10,7 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 | [Blueprint](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Blueprint/readme.md) | Easy | Hack into this Windows machine and escalate your privileges to Administrator. | 16 MAR 2022 |
 | [Blue(Eternal)](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/Blue(Eternal)#readme) | Easy | Deploy & hack into a Windows machine, leveraging common misconfigurations issues. | 18 MAR 2022 |
 | [Bookstore](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/Bookstore#readme) | Medium | A Beginner level box with basic web enumeration and REST API Fuzzing. | 07 JUN 2022 |
+| [Kenobi](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/Kenobi#readme) | Easy | Walkthrough on exploiting a Linux machine. Enumerate Samba for shares, manipulate a vulnerable version of proftpd and escalate your privileges with path variable manipulation. | 03 AUG 2022 |
 | [OhSINT](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/OhSINT#readme) | Easy | Are you able to use open source intelligence to solve this challenge? | 16 JUN 2022 | 
 | [Overpass](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/Overpass#readme) | Easy | What happens when some broke CompSci students make a password manager? | IN PROGRESS... | 
 | [RootMe](https://github.com/dozmert/Security-Labs/tree/main/TryHackMe/RootMe#readme) | Easy | A ctf for beginners, can you root me? | 14 JUN 2022 | 
