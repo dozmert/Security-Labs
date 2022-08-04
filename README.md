@@ -35,7 +35,7 @@ The developers of site request that writeups for Challenges and Investigations o
 ## HackThisSite
 | Challenges |  |  |  |  |
 | :---: | :---: | :---: | :---: | :---: |
-| [Basic](https://github.com/dozmert/Security-Labs/blob/main/HackThisSite/Basic/readme.md) | Reaslistic | Application | Programming | Phonephreaking |
+| [Basic](https://github.com/dozmert/Security-Labs/blob/main/HackThisSite/Basic/readme.md) | [Reaslistic](https://github.com/dozmert/Security-Labs/blob/main/HackThisSite/Realistic/readme.md) | Application | Programming | Phonephreaking |
 | Javascript | Forensic | Extbasic | Stego | IRC |
 
 ## Exercises/Miscellaneous

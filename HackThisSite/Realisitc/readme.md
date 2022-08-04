@@ -1,0 +1,7 @@
+# Hack This Site - Realistic Challenges
+| Level | Desecription | Resolution |
+| :---: | :--- | :--- |
+| Uncle Arnold's Local Band Review | Your friend is being cheated out of hundreds of dollars. Help him make things even again! | When inspecting network traffic after submitting a vote, a URL request can be observed which includes an id and vote field which can be manipulated to achieve the objective. |
+| Chicago American Nazi Party | Racist pigs are organizing an 'anti-immigrant' rally in Chicago. Help anti-racist activists take over their website! | When inspecting the html, a hidden hyperlink can be found that takes us to a login form where XSS can be employed in the password field. |
+| Peace Poetry: HACKED | A little girl made a website to post poetry related to peace and understanding. American fascists have hacked this website replacing it with Hitler-esque propaganda. Can you repair the website? | Viewing the source code of the defaced site indicates that the original homepage was renamed to oldindex.html. After exploring the site we find an upload form that doesn't validate content. Pasting the original homepage sourc code into the message field with a name of ../index.html will replace the defaced site and restore it. |
+| Fischer's Animal Products | FAP is a company that slaughters animals and turns their skin into overpriced products which are then sold to rich bastards! Help animal rights activists increase political awareness by hacking their mailing list. | x |
