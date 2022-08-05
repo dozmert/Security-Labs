@@ -42,7 +42,7 @@ From here we can see that the http server is running `Apache` on port `3333`. Fo
 
 This was the first time I've used `gobuster` and it ended up being very simple and easy to use. I used a publicly available wordlist that I found to be quite extensive and will be definitely coming back to use it for this type of purpose. The wordlist used was `httparchive_directories_1m_2021_04_28.txt` which can be found here: https://wordlists.assetnote.io/
 ```bash
-gobuster dir -u http:<Target-IP>:3333 -w <wordlist>
+gobuster dir -u http://<Target-IP>:3333 -w <wordlist>
 ```
 As the wordlist was quite long it was going to take a long time to work through it. In hindsight I should have specified an output file that I could monitor as I found myself scrolling back through the history to comb through matches.
 

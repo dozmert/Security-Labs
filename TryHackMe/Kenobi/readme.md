@@ -23,7 +23,7 @@ A box which walks you through enumeration of SMB shares to find attack vectors f
 #### Reconnaissance
 First we run an nmap scan on our target.
 ```bash
-nmap -T4 -sV 10.10.145.21
+nmap -T4 -sV <TargetIP>
 ```
 ```
 PORT     STATE SERVICE     VERSION
@@ -38,9 +38,9 @@ Service Info: Host: KENOBI; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 Attempting to reach the http server through a web browser takes us to a simple page with a Star wars image. Inspecting the page reveals nothing of interest.
 
-Out of curiosity, I ran a `Gobuster` search in the background to see if anything would be revealed.
+Out of curiosity, I ran a `Gobuster` search in the background to see if anything would be revealed. The wordlist used was `httparchive_directories_1m_2021_04_28.txt` which can be found [here](https://wordlists.assetnote.io/).
 ```bash
-gobuster dir --url http://10.10.145.21 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt > /home/kali/kali-tools/TryHackMe/Kenobi/Gobuster.txt -t 100
+gobuster dir -u http://<Target-IP> -w <wordlist> > <Outputfile> -t 100
 ```
 ```
 /server-status        (Status: 403) [Size: 277]
@@ -130,7 +130,7 @@ From this file we an gather information about the SSH key generated for the Keno
 
 The walktrhough asks us to enumerate the `RPC` service running on `port 111`. 
 ```bash
-nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.226.34
+nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount <TargetIP>
 ```
 ```
 PORT    STATE SERVICE
