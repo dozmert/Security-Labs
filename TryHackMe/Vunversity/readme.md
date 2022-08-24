@@ -40,7 +40,7 @@ Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_ke
 ```
 From here we can see that the http server is running `Apache` on port `3333`. For the purposes of this box, we do not need to do any more passive recon and can move into actively enumerating the application.
 
-This was the first time I've used `gobuster` and it ended up being very simple and easy to use. I used a publicly available wordlist that I found to be quite extensive and will be definitely coming back to use it for this type of purpose. The wordlist used was `httparchive_directories_1m_2021_04_28.txt` which can be found here: https://wordlists.assetnote.io/
+This was the first time I've used `gobuster` and it ended up being very simple and easy to use. I used a publicly available wordlist that I found to be quite extensive and will be definitely coming back to use it for this type of purpose. The wordlist used was `httparchive_directories_1m_2021_04_28.txt` which can be found [here](https://wordlists.assetnote.io/).
 ```bash
 gobuster dir -u http://<Target-IP>:3333 -w <wordlist>
 ```

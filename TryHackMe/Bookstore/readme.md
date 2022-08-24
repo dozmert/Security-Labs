@@ -40,7 +40,7 @@ Using this output we can see that the host is running a web server accross port 
 
 Navigating to the IP/url of the site we can see the Bookstore site which appears to be a digital store front that's still in development.
 
-First things first I start to spider the site using ffuf. In the past I had used Gobuster which I felt had a better user experience however it was worth trying a new tool out. The wordlist used was `httparchive_directories_1m_2021_04_28.txt` which can be found here: https://wordlists.assetnote.io/
+First things first I start to spider the site using ffuf. In the past I had used Gobuster which I felt had a better user experience however it was worth trying a new tool out. The wordlist used was `httparchive_directories_1m_2021_04_28.txt` which can be found [here](https://wordlists.assetnote.io/).
 ```bash
 ffuf -w /<wordlist>.txt -u http://<TargetIP>/FUZZ > /<output>.txt
 ```

