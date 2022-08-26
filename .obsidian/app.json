@@ -4,5 +4,6 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./images",
   "promptDelete": false,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "alwaysUpdateLinks": true
 }

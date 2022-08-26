@@ -1,4 +1,4 @@
-## TryHackMe - (Eternal)Blue Methodology
+## TryHackMe - [Blue](https://tryhackme.com/room/blue)
 > Completed 18th March 2022, Revisited 12th May 2022.
 
 This is the attack methodology I used for TryHackMe's Blue box.
@@ -51,11 +51,11 @@ Once Nessus was up and running I set the Target and set it loose. A number of vu
 port445 	MS17-010: Security Update for Microsoft Windows SMB Server (4013389) (ETERNALBLUE) (ETERNALCHAMPION) (ETERNALROMANCE) (ETERNALSYNERGY) (WannaCry) (EternalRocks) (Petya) (uncredentialed check)
 ```
 
-![](/TryHackMe/Blue(Eternal)/images/Blue_001.jpg)
+![](TryHackMe/Blue/images/Blue_001.JPG)
 
 >Edit: Another way this could have been discovered is through the use of nmap's script engine `nmap -T4 -Pn <Target-IP> --script=default,vuln`
 
-![](/TryHackMe/Blue(Eternal)/images/Blue_002.jpg)
+![](TryHackMe/Blue/images/Blue_002.JPG)
 
 #### Weaponization 
 N/A
@@ -114,7 +114,7 @@ ps
   migrate 692
 ```
 
-![](/TryHackMe/Blue(Eternal)/images/Blue_003.jpg)
+![](TryHackMe/Blue/images/Blue_003.JPG)
 
 According to the walkthrough Metasploit can immediately dump the Windows machine's hashes. This was so much more convenient than my attempts at extracting hashes in the Blueprint box. Instead of messing around with Hashcat however, I went straight to crackstation.
 ```

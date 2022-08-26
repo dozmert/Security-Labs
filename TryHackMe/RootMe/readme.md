@@ -1,4 +1,4 @@
-## TryHackMe - RootMe
+## TryHackMe - [RootMe](https://tryhackme.com/room/rootme)
 > Completed 14th June  2022.
 
 This ended up being a very straight forward boot2root box that required skills that I had picked up on in previous labs. I used this as n opportunity to reinforce some of which I had learned.
@@ -48,7 +48,7 @@ gobuster dir --url http://<TargetIP> -w <Wordlist> > <output.txt>
 As these two directories were revealed, navigating to them showed me that the site is capable of file uploads and that the upload directory could be accessed. I got to work preparing a reverse shell using `metasploit`.
 
 #### Weaponization 
-N/A
+- N/A
 
 #### Delivery
 The reverse shell code I used can be found [here](https://github.com/pentestmonkey/php-reverse-shell). My initial thought was that if the site uses `.php` files as webpages, I should be successful in getting a reverse shell connection if my rshell payload was also in `.php`. While poking at the upload form, we can see that `.php` files are forbidden from being uploaded via extension filtering. Using what I had learned back in my run through [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md)I renamed the file extension to `.phphtml` as first attempt to bypass the filter. The upload was successful.
@@ -72,10 +72,10 @@ $ id
 ```
 
 #### Installation 
-N/A
+- N/A
 
 #### Command & Control
-N/A
+- N/A
 
 #### Actions on Objective
 At this point I started walking the file directory of the box hoping to find some loot.

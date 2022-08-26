@@ -1,4 +1,4 @@
-## TryHackMe - Bookstore
+## TryHackMe - [Bookstore](https://tryhackme.com/room/bookstore)
 > Completed 7th June 2022.
 
 This ended up being a challenging box to throw myself against particularly because I was lacking some medium level practice. However, it ended up being privilege escalation that proved to be the most challenging aspect and not the web-app hacking. Upon completion of the box and checking my method against other write ups I could tell I had not gone down the conventional route and I make note of this deviation below.

@@ -1,7 +1,9 @@
-## TryHackMe - [Searchlight](https://tryhackme.com/room/ohsint)
-> Completed 30th June  2022.
+## TryHackMe - Template
+> Completed xth Month  YYYY, Revisited xth Month YYYY.
 
-An entry level OSINT challenge to warm up your Google skills.
+N/A
+
+> Edit: N/A
 
 ---
 ### Environment
@@ -9,50 +11,41 @@ An entry level OSINT challenge to warm up your Google skills.
 - Latest kali-VM rolling update
 
 #### Tools
-- Google
-- Image viewer
-- VLC Media Player
+- N/A
 
 ---
 ### Methodology
 #### Objectives/Flags
-1. Task 1
-2. Task 2
-3. Task 3
-4. Task 4
-5. Task 5
-6. Task 7
-7. Task 8
-8. Task 9
+1. N/A
 
 ---
 #### Reconnaissance
-- N/A
+N/A
 
 #### Weaponization 
-- N/A
+N/A
 
 #### Delivery
-- N/A
+N/A
 
 #### Exploitation
-- N/A
+N/A
 
 #### Installation 
-- N/A
+N/A
 
 #### Command & Control
-- N/A
+N/A
 
 #### Actions on Objective
-- N/A
+N/A
 
 ---
 ### After-action
 #### What I've learned
-- N/A
+N/A
 
 #### What I would've done differently
-- N/A
+N/A
 
 > Edit: N/A

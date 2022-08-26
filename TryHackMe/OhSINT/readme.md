@@ -1,4 +1,4 @@
-## TryHackMe - OhSINT
+## TryHackMe - [OhSINT](https://tryhackme.com/room/ohsint)
 > Completed 16th June 2022.
 
 A quick box that tests OSINT skills. 
@@ -15,16 +15,10 @@ A quick box that tests OSINT skills.
 ---
 ### Methodology
 #### Objectives/Flags
-1. What is this user's avatar of?
-2. What city is this person in?
-3. What's the SSID of the WAP he connected to?
-4. What is his personal email address?
-5. What site did you find his email address on?
-6. Where has he gone on holiday?
-7. What is this person's password?
+1. Answer questions 1-7
 
 ---
-#### Reconnaissance
+#### Investiation
 First I started off by downloaded the provided file `WindowsXP.jpg` and throwing that into exif examining tools. On my `kali` I was going to use exiftool primarily and then through the web browser I used [Jimpl](https://jimpl.com/)  as a secondary checker.
 ```bash
 sudo apt-get install exiftool
@@ -48,7 +42,6 @@ With the information found on these three web pages, I can answer some of the qu
 ```
 
 ```
-
 2. What city is this person in?
   Github -> London
 ```
@@ -91,24 +84,6 @@ The last two questions can be answered using information found on the user's Wor
 8. What is this person's password?
   Wordpress -> pennYDr0pper.!
 ```
-
-#### Weaponization 
-N/A
-
-#### Delivery
-N/A
-
-#### Exploitation
-N/A
-
-#### Installation 
-N/A
-
-#### Command & Control
-N/A
-
-#### Actions on Objective
-N/A
 
 ---
 ### After-action

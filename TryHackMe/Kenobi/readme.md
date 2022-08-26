@@ -1,4 +1,4 @@
-## TryHackMe - Kenobi
+## TryHackMe - [Kenobi](https://tryhackme.com/room/kenobi)
 > Completed 3rd August  2022.
 
 A box which walks you through enumeration of SMB shares to find attack vectors followed by new privilege escalation techniques.

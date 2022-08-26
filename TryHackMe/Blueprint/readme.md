@@ -1,4 +1,4 @@
-## TryHackMe - Blueprint Methodology
+## TryHackMe - [Blueprint](https://tryhackme.com/room/blueprint)
 > Completed 16th March 2022.
 
 This is the attack methodology I used for TryHackMe's Blueprint box.

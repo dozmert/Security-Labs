@@ -1,4 +1,4 @@
-## TryHackMe - Wonderland
+## TryHackMe - [Wonderland](https://tryhackme.com/room/wonderland)
 > Completed 5th August  2022.
 
 A fun Alice in Wonderland themed box that gives you no walkthrough and allegedly offeres different routes for completion.
@@ -67,10 +67,10 @@ This gave me a feeling that there would be different possible paths to take insi
 At this point I continued to enumerate the site using `Gobuster` at the different subdirectories to find additional clues and perhapse a way to move forward. While this was happening I researched the clue to see if it would offer me some other keywords or ideas on proceeding. 
 
 #### Weaponization 
-N/A
+- N/A
 
 #### Delivery
-N/A
+- N/A
 
 #### Exploitation
 After turning up nothing of value I decided to try and SSH into the machine using the clue and a username and password.
@@ -85,10 +85,10 @@ id
 ```
 
 #### Installation 
-N/A
+- N/A
 
 #### Command & Control
-N/A
+- N/A
 
 #### Actions on Objective
 At this point I got to work searching for loot and information of interest.

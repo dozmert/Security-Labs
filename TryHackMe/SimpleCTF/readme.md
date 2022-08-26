@@ -1,4 +1,4 @@
-## TryHackMe - SimpleCTF
+## TryHackMe - [SimpleCTF](https://tryhackme.com/room/simplectf)
 > Completed 28th June  2022.
 
 This box ended up being an interesting less than straight forward boot2root exercise. I found myself stuggling again once I needed to explore for priviledge escallation vectors.
@@ -104,29 +104,29 @@ vim exploit
 root.txt
 
 #### Weaponization 
-N/A
+- N/A
 
 #### Delivery
-N/A
+- N/A
 
 #### Exploitation
-N/A
+- N/A
 
 #### Installation 
-N/A
+- N/A
 
 #### Command & Control
-N/A
+- N/A
 
 #### Actions on Objective
-N/A
+- N/A
 
 ---
 ### After-action
 #### What I've learned
-N/A
+- N/A
 
 #### What I would've done differently
-N/A
+- N/A
 
 > Edit: N/A
