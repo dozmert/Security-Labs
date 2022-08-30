@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "TryHackMe/PickleRick/readme.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "linpeas",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "TryHackMe/PickleRick/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "e0745fbd7e203d43",
   "lastOpenFiles": [
-    "TryHackMe/SimpleCTF/readme.md",
-    "TryHackMe/PickleRick/readme.md",
-    "TryHackMe/OhSINT/readme.md",
-    "README.md",
-    "TryHackMe/THM-red-template.md",
     "TryHackMe/THM-blue-template.md",
-    "TryHackMe/Investigating-Windows/readme.md",
+    "TryHackMe/THM-red-template.md",
+    "TryHackMe/PickleRick/readme.md",
     "TryHackMe/Wonderland/readme.md",
-    "TryHackMe/Vunversity/readme.md",
-    "TryHackMe/Searchlight/readme.md"
+    "TryHackMe/OhSINT/readme.md",
+    "TryHackMe/Dogcat/readme.md",
+    "README.md",
+    "TryHackMe/SimpleCTF/readme.md",
+    "TryHackMe/Investigating-Windows/readme.md",
+    "TryHackMe/Vunversity/readme.md"
   ]
 }
