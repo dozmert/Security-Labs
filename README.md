@@ -25,7 +25,7 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 | [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md) | Easy | Learn about active recon, web app attacks and privilege escalation. | 28 APR 2022 |
 | [Wonderland](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Wonderland/readme.md) | Medium | Fall down the rabbit hole and enter wonderland. | 05 AUG 2022 |
 
-### Fundamental Modules
+#### Fundamental Modules
 | [Junior Penetration Tester](https://tryhackme.com/paths)
 	[Introduction to Web Hacking](https://tryhackme.com/module/intro-to-web-hacking) - Get hands-on, learn about and exploit some of the most popular web application vulnerabilities seen in the industry today.
 		[Walking an Application](https://tryhackme.com/room/walkinganapplication) - Manually review a web application for security issues using only your browsers developer tools. Hacking with just your browser, no tools or scripts.
@@ -49,9 +49,10 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 		[Protocals and Servers 2](https://tryhackme.com/room/protocolsandservers2) - Learn about attacks against passwords and cleartext traffic; explore options for mitigation via SSH and SSL/TLS.
 		[Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) - Practice the skills you have learned in the Network Security module.
 
-Windows Forensics
-	[Sysinternals](https://tryhackme.com/room/btsysinternalssg)  - Learn to use the Sysinternals tools to analyze Window systems or applications.
-	[Core Windows Processes](https://tryhackme.com/room/btwindowsinternals) - Explore the core processes within a Windows operating system and understand what is normal behavior. This foundational knowledge will help you identify malicious processes running on an endpoint!
+#### Windows Forensics
+[Sysinternals](https://tryhackme.com/room/btsysinternalssg)  - Learn to use the Sysinternals tools to analyze Window systems or applications.
+[Core Windows Processes](https://tryhackme.com/room/btwindowsinternals) - Explore the core processes within a Windows operating system and understand what is normal behavior. This foundational knowledge will help you identify malicious processes running on an endpoint!
+[Windows Event Logs](https://tryhackme.com/room/windowseventlogs) - Introduction to Windows Event Logs and the tools to query them.
 
 ## BlueTeamLabs
 The developers of site request that writeups for Challenges and Investigations only be posted after content has been retired and is no longer worth points.
