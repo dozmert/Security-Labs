@@ -48,7 +48,22 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 		[Protocols and Servers](https://tryhackme.com/room/protocolsandservers) - Learn about common protocols such as HTTP, FTP, POP3, SMTP and IMAP, along with related insecurities.
 		[Protocals and Servers 2](https://tryhackme.com/room/protocolsandservers2) - Learn about attacks against passwords and cleartext traffic; explore options for mitigation via SSH and SSL/TLS.
 		[Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) - Practice the skills you have learned in the Network Security module.
-
+[Red Teaming](https://tryhackme.com/path/outline/redteaming) - The aim of this pathway is to show you how to emulate a potential adversary attack in complex environments. Going beyond penetration testing, you will learn to conduct successful Red Team engagements and challenge the defence capability of your clients.
+	Red Team Fundamentals - Learn the core components of a red team engagement, from threat intelligence to OPSEC and C2s.
+		[Red Team Fundamentals](https://tryhackme.com/room/redteamfundamentals)	 - Learn about the basics of a red engagement, the main components and stakeholders involved, and how red teaming differs from other cyber security engagements.
+		[Red Team Engagements](https://tryhackme.com/room/redteamengagements) - Learn the steps and procedures of a red team engagement, including planning, frameworks, and documentation.
+		[Red Team Threat Intel](https://tryhackme.com/room/redteamthreatintel) - Apply threat intelligence to red team engagements and adversary emulation.
+		[Red Team OPSEC](https://tryhackme.com/room/opsec) - Learn how to apply Operations Security (OPSEC) process for Red Teams.
+		[Intro to C2](https://tryhackme.com/room/introtoc2) - Learn the essentials of Command and Control to help you become a better Red Teamer and simplify your next Red Team assessment!
+	Initial Access - Explore the different techniques to gain initial access to a target system and network from a Red Teamer’s perspective.
+		[Red Team Recon](https://tryhackme.com/jr/redteamrecon) - Learn how to use DNS, advanced searching, Recon-ng, and Maltego to collect information about your target.
+		[Weaponization](https://tryhackme.com/jr/weaponization) - Understand and explore common red teaming weaponization techniques. You will learn to build custom payloads using common methods seen in the industry to get initial access.
+		[Password Attacks](https://tryhackme.com/jr/passwordattacks) - This room introduces the fundamental techniques to perform a successful password attack against various services and scenarios.
+		[Phishing](https://tryhackme.com/jr/phishingyl) - Learn what phishing is and why it's important to a red team engagement. You will set up phishing infrastructure, write a convincing phishing email and try to trick your target into opening your email in a real-world simulation.
+	Post Compromise - Learn about the steps taken by an attacker right after gaining an initial foothold on a network.
+		[The Lay of the Land](https://tryhackme.com/room/thelayoftheland) - Learn about and get hands-on with common technologies and security products used in corporate environments; both host and network-based security solutions are covered.
+		[Enumeration](https://tryhackme.com/room/enumerationpe) - This room is an introduction to enumeration when approaching an unknown corporate environment.
+		[Windows Privilege Escallation](https://tryhackme.com/room/windowsprivesc20) - Learn the fundamentals of Windows privilege escalation techniques.
 #### Windows Forensics
 [Sysinternals](https://tryhackme.com/room/btsysinternalssg)  - Learn to use the Sysinternals tools to analyze Window systems or applications.
 [Core Windows Processes](https://tryhackme.com/room/btwindowsinternals) - Explore the core processes within a Windows operating system and understand what is normal behavior. This foundational knowledge will help you identify malicious processes running on an endpoint!
