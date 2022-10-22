@@ -23,6 +23,7 @@ Reconnaissance > Weaponization > Delivery > Exploitation > Installation > Comman
 | [Searchlight](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Searchlight/readme.md) | Easy | OSINT challenges in the imagery intelligence category | 30 JUN 2022 | 
 | [SimpleCTF](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/SimpleCTF/readme.md) | Easy | Beginner level ctf | 28 JUN 2022 | 
 | [Vulnversity](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Vunversity/readme.md) | Easy | Learn about active recon, web app attacks and privilege escalation. | 28 APR 2022 |
+| [Windows Fundamentals 1](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Windows-Fundamentals-1/readme.md) | Info | In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, the NTFS file system, UAC, the Control Panel, and more.. | In Progress... |
 | [Wonderland](https://github.com/dozmert/Security-Labs/blob/main/TryHackMe/Wonderland/readme.md) | Medium | Fall down the rabbit hole and enter wonderland. | 05 AUG 2022 |
 
 #### Fundamental Modules
